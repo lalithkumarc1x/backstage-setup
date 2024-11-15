@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: My Api
+  description: My API 
+spec:
+  type: openapi
+  lifecycle: production
+  owner: user:guest
+  definition:
+    $openapi: http://localhost:4000/api-yaml
